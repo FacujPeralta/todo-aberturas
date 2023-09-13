@@ -1,0 +1,550 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media(max-width:550px){
+    body{
+        font-size: 16px;
+    }
+}
+.navegador{
+    padding: 15px;
+    background-color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    ul{
+        list-style: none;
+        margin: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style: none;
+        align-content: center;
+        li a{
+            text-decoration: none;
+            padding: 10px 20px;
+            list-style: none;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            &:hover{
+                transition: 0.2s;
+                color: #ccc;
+                font-size: 30px;
+            }
+           
+        }
+        
+    }
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+.producto{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+    .info{
+        background-color: #a19f9f;
+        color: white;
+        border: 5px solid black;
+        width: 950px;
+        margin: 25px;
+        padding: 10px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        button{
+            padding: 20px 25px;
+            &:hover{
+                background-color: #959292;
+                font-size: 30px;
+            }
+        }
+    }
+}
+.encabezadoproductos{
+    background-color:#928e8e81;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.present{
+    width: 1200px;
+    color: black;
+    font-size: 35px;
+    margin: 15px auto;
+    border: 3px solid black;
+    padding: 20px;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    &:hover{
+        background-color: #ccccccc8;
+    }
+    .h4{
+        font-size: 50px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+}
+@media(max-width:1200px){
+    .present{
+        width: auto;
+        font-size: 15px;
+        h4{
+            font-size: 20px;
+        }
+    }
+}
+.tarjeta{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .tarjetaventas{
+        width: 850px;
+        margin: 25px auto;
+        padding: 30px;
+        gap: 30px;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        &:hover{
+            font-size: 35px;
+        }
+        .imagen{
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+        }
+        button{
+            padding: 10px 15px;
+            &:hover{
+                padding: 20px 20px;
+                background-color: #a7a5a5;
+            }
+        }
+    }
+}
+.informacion{
+    background-color: #ccc;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 25px;
+    border: 3px solid #000000;
+    border-radius: 6px;
+    margin: 50px;
+    .contactos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 40px;
+        padding: 15px;
+        h3{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 50px;
+            text-align: center;
+        }
+        p{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 35px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .ict{
+            display: none;
+        }
+    }    
+}
+.nosotros{    
+    background-color: #ccc;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 25px;
+    border: 3px solid #000000;
+    border-radius: 6px;
+    margin: 20px;
+    .presentacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 40px;
+        padding: 15px;
+    }
+    img{
+        width: 540px;
+        height: 500px;
+        margin: 10px auto;
+        transition: 0.7s;
+    }
+}
+
+.datos-final{
+    background-color: #000000;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .pie-redes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        font-size:60px;
+    }
+    .pie{
+        display: grid;
+        grid-template-columns: repeat(3,fr);
+    }
+}
+
+.rebote:hover {
+animation: 2s rebote 1;
+}
+
+@keyframes rebote{
+    20%, 50%, 80%{
+    -webkit-transform: translateY(0px);
+    }
+    30%{
+    -webkit-transform: translateY(-45px);
+    }
+    60%{
+    -webkit-transform: translateY(-25px);
+    }
+}
+@media(max-width:560px){
+    .navegador{
+        width: auto;
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        li a{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5px;
+            margin: 0;
+            }
+        }
+    }
+    .logo{
+        width:60px;
+        height:60px;
+        display: flex;
+    }
+    .producto{
+        padding: 10px;
+        font-size: 16px;
+        width:auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .info{
+            border: 1px solid beige;
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: auto;
+            height: auto;
+        }
+        
+        h5{
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 5px;
+            padding: 5px;
+            align-items: center;
+        }
+        img{
+            padding: 5px;
+            max-width:250px;
+            height: auto;
+        }
+        button{
+            padding:5px 5px;
+            margin: 5px auto;
+            &:hover{
+                padding: 5px 5px;
+            }
+        }
+    }
+    #carouselExampleIndicators{
+        max-width: 100%;
+        height: auto;
+    }
+    .datos-final{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;   
+        padding: 20px;
+        h4{
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 15px;
+        }
+        .p{
+            font-size: 15px;
+            width: 250px;
+            display: flex;
+            flex-direction:column;
+            flex-wrap: wrap;
+        }
+    }
+    .marca{
+        display: none;
+    }
+    .fa-brands{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tarjeta{
+        padding: 10px;
+        font-size: 16px;
+        width:300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+       
+        .tarjetaventas{
+            background-color: #ccc;
+            border: 1px solid beige;
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 100%;
+            height: auto;
+            h3{
+                font-size: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin: 5px;
+                padding: 5px;
+                align-items: center;
+            }
+            img{
+                padding: 5px;
+                max-width:250px;
+                height: 150px;
+            }
+        }
+    }
+    .informacion{
+        border: 3px solid black;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 100%;
+        height: auto;
+        .contactos{
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            .h3{
+                font-size: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin: 5px;
+                padding: 5px;
+            }
+            p{
+                font-size: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                margin: 5px;
+                padding: 5px;
+            }
+            .ict{
+                width: 70px;
+                height: 70px;
+                margin: 15px;
+                object-fit: cover;
+                display: flex;
+                flex-wrap: wrap;
+            }
+          
+        }
+    }
+    .nosotros{
+        padding: 10px;
+        font-size: 16px;
+        width:300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .presentacion{
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        img{
+            padding: 5px;
+                max-width:250px;
+                height: 250px;
+        }
+    }
+}
+/* Styles door*/
+ .puertas{
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ffffffb7;
+
+    .puertas-ventas{
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 10px auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        .h4{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 35px;
+        }
+        p{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 35px;
+            justify-content: center;
+        }
+    }
+    .boton{
+        margin: 15px auto;
+        padding: 15px 20px;
+        background-color:blue;
+        color: white;
+        border-radius: 15px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        text-decoration: none;
+    }
+}
+@media(max-width:1200px){
+    .puertas{
+        padding: 10px;
+        font-size: 16px;
+        width:300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .puertas-ventas{
+            background-color: #ffffffb7;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 100%;
+            height: auto;
+            .img-puerta-ventas{
+                padding: 5px;
+                width:250px;
+                height: 250px;
+            }
+        }
+        
+    }
+
+}
