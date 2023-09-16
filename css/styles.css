@@ -169,15 +169,14 @@
 
 .informacion {
   background-color: #ccc;
+  margin: 60px;
   font-size: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px auto;
   padding: 25px;
   border: 3px solid #000000;
   border-radius: 6px;
-  margin: 50px;
 }
 .informacion .contactos {
   display: flex;
@@ -185,6 +184,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 15px;
+  margin: 15px auto;
 }
 .informacion .contactos h3 {
   display: flex;
@@ -242,7 +242,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
-  font-size: 60px;
+  font-size: 40px;
 }
 .datos-final .pie {
   display: grid;
@@ -358,12 +358,9 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .marca {
-    display: none;
-  }
   .fa-brands {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   .tarjeta {
@@ -474,19 +471,21 @@
 }
 /* Styles door*/
 .puertas {
-  margin: 20px;
-  padding: 15px;
+  margin: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.7176470588);
+  justify-content: space-evenly;
 }
 .puertas .puertas-ventas {
   border: 2px solid black;
   border-radius: 5px;
-  margin: 10px auto;
+  margin: 20px;
   padding: 15px;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
