@@ -47,20 +47,16 @@
 }
 
 .producto {
-  margin: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .producto .info {
-  background-color: #a19f9f;
-  color: white;
-  border: 5px solid black;
-  width: 950px;
+  border: 2px solid black;
   margin: 25px;
   padding: 10px;
-  gap: 30px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -69,17 +65,17 @@
   align-items: center;
 }
 .producto .info img {
-  width: 600px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  border: 1px solid black;
 }
 .producto .info button {
-  padding: 20px 25px;
+  padding: 10px 15px;
 }
 .producto .info button:hover {
   background-color: #959292;
-  font-size: 30px;
 }
 
 .encabezadoproductos {
@@ -147,9 +143,6 @@
   align-items: center;
   background-color: #ccc;
 }
-.tarjeta .tarjetaventas:hover {
-  font-size: 35px;
-}
 .tarjeta .tarjetaventas .imagen {
   border: 3px solid black;
   display: flex;
@@ -161,9 +154,9 @@
 }
 .tarjeta .tarjetaventas button {
   padding: 10px 15px;
+  align-content: center;
 }
 .tarjeta .tarjetaventas button:hover {
-  padding: 20px 20px;
   background-color: #a7a5a5;
 }
 
@@ -239,7 +232,7 @@
 }
 .datos-final .pie-redes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 30px;
   font-size: 40px;
@@ -283,8 +276,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     padding: 5px;
-    margin: 0;
   }
   .logo {
     width: 60px;
@@ -338,14 +332,20 @@
     height: auto;
   }
   .datos-final {
+    margin: 20px;
     font-size: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
   }
+  .datos-final .pie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
   .datos-final h4 {
-    width: 250px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -359,9 +359,11 @@
     flex-wrap: wrap;
   }
   .fa-brands {
+    margin: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
   }
   .tarjeta {
     padding: 10px;
