@@ -37,7 +37,6 @@
 .navegador ul li a:hover {
   transition: 0.2s;
   color: #ccc;
-  font-size: 30px;
 }
 
 .logo {
@@ -155,7 +154,7 @@
   align-content: center;
 }
 .tarjeta .tarjetaventas button:hover {
-  background-color: #a7a5a5;
+  background-color: #767474;
 }
 
 .informacion {
@@ -276,7 +275,6 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 5px;
   }
   .logo {
     width: 60px;
